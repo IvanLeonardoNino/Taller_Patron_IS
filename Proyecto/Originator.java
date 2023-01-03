@@ -54,12 +54,13 @@ class Originator {
     return new Memento(vida, nivel, coordenadaX, coordenadaY, coordenadaZ, ultimoObjeto);
   }
 
+
   public void getStateFromMemento(Memento memento) {
     vida = memento.getVida();
     nivel = memento.getNivel();
     coordenadaX = memento.getCoordenadaX();
     coordenadaY = memento.getCoordenadaY();
-    coordenadaY = memento.getCoordenadaZ();
+    coordenadaZ = memento.getCoordenadaZ();
     ultimoObjeto = memento.getUltimoObjeto();
   }
 }

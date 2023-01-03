@@ -3,7 +3,7 @@ package Proyecto;
 public class Main {
     public static void main(String[] args) {
 
-        //Primero se crea una instancia de Originator y se establece su estado
+        //Primero se crea una instancia del Originator y se establece su estado
 
         Originator originator = new Originator();
         originator.setVida(100);
@@ -47,13 +47,12 @@ public class Main {
         // Vuelve a crear un memento y lo agrega al caretaker
         caretaker.addMemento(originator.saveStateToMemento());
 
-        // Recupera el primero memento del caretaker y se lo da al originator para que
-        // lo use
+        // Recupera el primero memento del caretaker y se lo da al originator
         originator.getStateFromMemento(caretaker.getMemento(0));
 
         System.out.println("---------------------------------------------------------");
 
-        System.out.println("Recupera el primero memento del caretaker y se lo da al originator para que lo use");
+        System.out.println("Recupera el primero memento del caretaker y se lo da al originator");
 
         System.out.println("---------------------------------------------------------");
 

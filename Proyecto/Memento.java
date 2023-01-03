@@ -8,7 +8,7 @@ class Memento {
   private final int coordenadaZ;
   private final String ultimoObjeto;
 
-  public Memento(int vida, int nivel, int coordenadaX, int coordenadaY,int coordenadaZ, String ultimoObjeto) {
+  public Memento(int vida, int nivel, int coordenadaX, int coordenadaY, int coordenadaZ, String ultimoObjeto) {
     this.vida = vida;
     this.nivel = nivel;
     this.coordenadaX = coordenadaX;
